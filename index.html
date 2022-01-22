@@ -3,94 +3,198 @@
 <head>
    <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Основы CSS</title>
+  <title>MobileFirst</title>
   <link rel="icon" href="img/htmlIco.png">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet"> -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https: //fonts.googleapis.com/css2?family= Roboto & display = swap" rel="stylesheet"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Bekkali Kaiyrgali">
   <meta name="keywords" content="HTML"> 
-  <meta name="description" content="Урок #2 - основы CSS">
-<!-- Задание
-1)Верстаем сайт по видеокурсу
-https://www.youtube.com/watch?v=6l3ZSOQKE5g
--->
-
+  <meta name="description" content="Урок #3 - MobileFirst">
 </head>
+<!-- Задание
+1)Верстаем сайт по макету
+https://www.figma.com/file/tDXKBS668DUhbK0DOVg6dv/Templates-%2315.-More-on-Figma.info?node-id=0%3A1
+-->
 <body>
-   <h1>Основы HTML</h1>
-<!-- 1. Таблица бюджета -->
-   <table>
-      <caption>
-         <h2>Проект бюджета на 2022 год</h2>
-      </caption>
-      <tr>
-         <th>№ п/п</th>
-         <th>Статья бюджета</th>
-         <th>Сумма</th>
-      </tr>
-      <tr>
-         <td>1</td>
-         <td>Доход</td>
-         <td>1 300 000</td>
-      </tr>
-      <tr>
-         <td>2</td>
-         <td>Расход</td>
-         <td>1 000 000</td>
-      </tr>
-      <tr>
-         <td>3</td>
-         <td>Прибыль до налогооблажения</td>
-         <td>300 000</td>
-      </tr>
-      <tr>
-         <td>4</td>
-         <td>Налог (20%)</td>
-         <td>60 000</td>
-      </tr>
-      <tr>
-         <td colspan="2">Итого Прибыль после налогооблажения</td>
-         <td>240 000</td>
-      </tr>
-   </table>
+<!-- 1 section -->
+   <header class="header">
+      <div class="container">
+         <div class="menu">
+            <nav class="menu__burger">
+               <img id="burger" src="img/Vector.svg" alt="Меню">
+            </nav>
+            <div class="menu__phone">
+               <a id="phone" href="#">+7 495 123-45-67</a>
+            </div>
+         </div>
 
-<!-- 2. Список мероприятий -->
-<h2>Мероприятия по увеличению прибыли</h2>
-<ol>
-   <li>Увеличить выручку</li>
-   <li>Снизить постоянные затраты</li>
-   <li>Автоматизировать бизнес процессы</li>
-   <li>Масштабировать бизнес</li>
-   <li>Нанять налогового консультанта</li>
-</ol>
+         <div class="first">
+            <h1 class="uppercase">Большой театр</h1>
+            <p>Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</p>
+            <button class="uppercase button">афиша
+            </button>
+            <!-- <a href="#" class="button uppercase">афиша</a> -->
+         </div>
+      </div>
+     
+   </header>
 
-<!-- 3. График - картинка -->
-<h2>Динамика основных показателей</h2>
-<img src="img/schedule.png" alt="График показателей">
+<!-------------------
+----- 2 section -----
+-------------------->
+   <section class="about">
+      <div class="container">
+         <h2 class="about
+         __title uppercase"><span class="gold-color">о </span>театре</h2>
+         <div class="about__best">
+            <h3 class="uppercase">Самый лучший театр СПБ</h3>
+            <p>Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
+         </div>
+         <div class="about__numbers">
+            <h3 class="uppercase">немного о цифрах</h3>
+            <div class="about__numbers__two">
+               <div class="about__numbers__two__first">
+                  <img src="img/armchair 1.png" alt="">
+                  <h5><span class="gold-color">1600 </span>посадочных мест</h5>
+               </div>
+               <div class="about__numbers__two__second">
+                  <img src="img/theater 1.png" alt="">
+                  <h5><span class="gold-color">350 </span>лет истории</h5>
+               </div>
+            </div>
+         </div>
+         <h2 class="uppercase"><span class="gold-color">наши </span>постановки</h2>
+<!-- слайдер -->
+<!-- для мобильной версии -->
+<!-- не получилось -->
 
-<!-- 4. Форма с отправкой на почту -->
-<h2>Свяжитесь с нами</h2>
-<form name="userRegistration"> 
-   <fieldset>
-      <legend>Контактная информация</legend>
-      <p>
-         <label for="name">Login</label>
-         <input placeholder="Введите логин" type="text" id="name">
-      </p>
-      <p>
-         <label for="password">Password</label>
-         <input placeholder="Введите пароль" type="password" id="password">
-      </p>  
-      <p>
-         <label for="email">E-mail</label>
-         <input placeholder="Введите свой email" type="email" id="email">
-      </p>  
-      <p><input type="submit" value="Отправить"></p>
-    </fieldset>
-  
-</form>
+         <div class="wrapper">
+            <div class="slider">
+               <div class="slider__track">
+                  <div class="slider__item__1 active">
+                     <img src="img/projects__item-1.jpg" alt="1">
+                  </div>
+                  <div class="slider__item__2">
+                     <img src="img/projects__item-2.jpg" alt="2">
+                  </div>
+                  <div class="slider__item__3">
+                     <img src="img/projects__item-3.jpg" alt="3">
+                  </div>
+                  <div class="slider__item__4 active">
+                     <img src="img/projects__item-4.jpg" alt="4">
+                  </div>
+               </div>
+            </div>
+         </div>         
+      </div>
+   </div>
+   </section>
+
+<!-------------------
+----- 3 section -----
+-------------------->
+   <section class="projects">
+      <div class="container">
+         <div class="best">
+            <div class="best-years gold-color"> 
+               2018 <br>
+               2019 <br>
+               2020
+            </div>
+            <div class="best-stars">
+               <div class="best-stars__5stars">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+                  <img src="img/star.svg" alt="">
+               </div>
+               <p>Лучший театр
+                  по мнению театральных критиков Парижа</p>
+            </div>
+         </div>
+      </div>
+   </section>
+<!-------------------
+----- 4 section -----
+-------------------->
+
+   <section class="partners">
+      <div class="container">
+         <h2 class="uppercase"><span class="gold-color">партнеры 
+         </span>театра</h2>
+         <div class="partners-block">
+           <div class="parners-block__1">
+            <img src="img/logo.png" alt="logo1">
+            <img src="img/logo.png" alt="logo2">
+            <img src="img/logo.png" alt="logo3">
+            <img src="img/logo.png" alt="logo4">
+         </div>
+         <div class="parners-block__2">
+            <img src="img/logo.png" alt="logo5">
+            <img src="img/logo.png" alt="logo6">
+            <img src="img/logo.png" alt="logo7">
+            <img src="img/logo.png" alt="logo8">
+         </div> 
+         </div>
+         <h2 class="uppercase"><span class="gold-color">стать 
+         </span>меценатом</h2>
+      </div>
+   </section>
+   
+<!-------------------
+----- 5 section -----
+-------------------->
+<section class="form-adress">
+   <div class="container">
+      <form action="#" class="form">
+         <div class="form__datas">
+            <div class="form__datas__1">
+               <input type="text" class="name" 
+               placeholder="Имя">
+               <input type="text" class="company" placeholder="Компания">
+            </div>
+            <div class="form__datas__1">
+               <input type="tel" class="telephone" 
+               placeholder="Телефон">
+               <input type="email" class="email" placeholder="E-mail">
+            </div>
+         </div>
+         <div class="form__message">
+            <textarea name="message" class="message" placeholder="Сообщение"></textarea>
+            <!-- <input type="text" class="message" placeholder="Сообщение"> -->
+         </div>
+         <input type="submit"  class="button uppercase">
+      </form>
+      <div class="asterix"> <p>* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</p></div>
+      <div class="contacts">
+         <div class="contacts__left">
+            <p>+7 (812) 123-45-55</p>
+            <p>+7 (812) 123-45-66</p>
+         </div>
+         <div class="contacts__right">
+            <p class="uppercase">info@theater.ru</p>
+            <p class="uppercase">г. санкт-петербург, невский 140</p>
+         </div>
+      </div>
+   </div>
+
+</section>
+<!-------------------
+----- footer -----
+-------------------->
+   <footer>
+      <div class="container">
+         <div class="footer">
+            <p>(с) Все права защищены. Большой театр. 2020</p>
+            <p>Разработано d-e-n.ru</p>
+         </div>         
+      </div>
+   </footer>
 
 <!-- JS пока не задействован -->
 <!-- <script src="js/script.js"></script> -->
