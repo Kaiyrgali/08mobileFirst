@@ -1,0 +1,128 @@
+body {
+  width: 768px;
+}
+
+.container {
+  width: 690px;
+}
+
+header {
+  padding-bottom: 207px;
+}
+
+h1 {
+  margin-top: 169px;
+}
+
+.first p {
+  max-width: 540px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/**********************
+******* 2 section ******
+***********************/
+.about-block {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 350px;
+}
+
+.about__best {
+  position: absolute;
+  margin-top: 0;
+  padding-top: 0;
+  width: 445px;
+}
+
+.about__numbers {
+  position: absolute;
+  margin-left: 475px;
+}
+
+.about__best h3 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.about__best p {
+  text-align: left;
+  line-height: 200%;
+}
+
+.about__numbers__two {
+  margin-top: 40px;
+  display: block;
+}
+
+.about__numbers__two__second {
+  margin-top: 25px;
+}
+
+/**********************
+******* 3 section ******
+***********************/
+.projects-stars p {
+  width: 338px;
+}
+
+/**********************
+******* 4 section ******
+***********************/
+.form {
+  margin-top: 60px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__datas__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input, .message {
+  width: 180px;
+}
+
+.name, .telephone, .company {
+  margin-right: 30px;
+}
+
+.message {
+  width: 270px;
+}
+
+.underform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.underform .asterix {
+  position: absolute;
+  padding-left: 0;
+  margin-left: 0;
+  width: 390px;
+}
+
+.underform .button {
+  position: absolute;
+  margin-top: 0;
+  margin-right: 0;
+}
+/*# sourceMappingURL=mw768.css.map */

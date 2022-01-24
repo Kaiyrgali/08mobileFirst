@@ -1,0 +1,65 @@
+body {
+    min-width: 1280px;
+}
+.container {
+    width: 1110px;
+     padding-left: 50px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+}
+.menu {
+    justify-content: flex-end;
+    padding-top: 0px;
+    // &__phone a {
+    //     padding: 0 0 20px 0;
+}
+ul {
+    margin-top: 0;
+    width: 824px;
+}
+header {
+    display: flex;
+    padding-bottom: 207px;
+}
+h1 {
+    text-align: left;
+}
+.about-all {
+    display: flex;
+    // justify-content: space-between;
+}
+.about-block {
+    width: 730px;
+}
+.about-foto {
+    // position: absolute;
+    display: block;
+    margin-top: 60px;
+}
+.best-stars {
+    // margin-left: 100px;
+    width: 540px;
+}
+.best-stars {
+    margin-left: 1000px;
+}
+
+// 5 section
+
+.feedback {
+    display: flex;
+    position: relative;
+    .contacts {
+        position: absolute;
+        display: block;
+        &__right p{
+            text-align: left;
+        }
+    }
+    form {
+        margin-left: 380px;
+    }
+}
